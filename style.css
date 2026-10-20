@@ -1,0 +1,15 @@
+/*
+Theme Name: Agency Theme
+Author: James Ochiedike
+Version: 1.0
+*/
+.site-header {
+    background: #0f172a;
+    padding: 1rem;
+}
+
+.site-header__title {
+    color: #ffffff;
+    font-size: 1.25rem;
+    margin: 0;
+}
