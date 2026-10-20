@@ -13,3 +13,29 @@ Version: 1.0
     font-size: 1.25rem;
     margin: 0;
 }
+
+.site-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.site-header__nav .nav-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.site-header__nav .nav-menu a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.site-header__nav .nav-menu a:hover {
+    text-decoration: underline;
+}
