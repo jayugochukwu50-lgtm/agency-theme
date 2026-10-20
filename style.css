@@ -3,39 +3,103 @@ Theme Name: Agency Theme
 Author: James Ochiedike
 Version: 1.0
 */
-.site-header {
-    background: #0f172a;
-    padding: 1rem;
+:root {
+    --color-navy: #0f172a;
+    --color-orange: #f97316;
+    --color-white: #ffffff;
+    --color-text: #1e293b;
+    --color-light: #f1f5f9;
+    --font-body: 'Inter', Arial, sans-serif;
+    --font-heading: 'Poppins', Arial, sans-serif;
+    --container: 1100px;
 }
 
-.site-header__title {
-    color: #ffffff;
-    font-size: 1.25rem;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
     margin: 0;
+    font-family: var(--font-body);
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-heading);
+    line-height: 1.2;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 100%;
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 0 1.25rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.btn--primary {
+    background: var(--color-orange);
+    color: var(--color-white);
+}
+
+.btn--primary:hover {
+    background: #ea580c;
 }
 
 .site-header {
+    background: var(--color-navy);
+    color: var(--color-white);
+}
+
+.site-header__inner {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.site-header__logo {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-white);
+    text-decoration: none;
 }
 
 .site-header__nav .nav-menu {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 1.5rem;
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
 .site-header__nav .nav-menu a {
-    color: #ffffff;
+    color: var(--color-white);
     text-decoration: none;
 }
 
 .site-header__nav .nav-menu a:hover {
-    text-decoration: underline;
+    color: var(--color-orange);
 }
